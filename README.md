@@ -45,3 +45,7 @@ VM boot volume size is 200M by default that can be adjusted per build needs duri
 <br>
 A bigger VM shape performs better. The defaults are 1 OCPU and 8GB memory that can be also adjusted during the Terraform stack creation.
 <p>
+
+### Testing
+
+After deploying the runner it can be tested using this repo: https://github.com/mikarinneoracle/OKE-kubectl
