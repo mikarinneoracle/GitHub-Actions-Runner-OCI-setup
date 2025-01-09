@@ -13,7 +13,7 @@ Stack then allows to configure the parameters for the Runner and VM creation:
 <ul>
     <li>Runner and VM name</li>
     <li>GitHub repository url</li>
-    <li>GitHub Actions runner token. Please note this is short-lived and needs to be generated from the GitHub project under <code>/settings/actions/runners</code> and clicking New Self-hosted runner -button (see the image below where the token is highlighted in light blue)</li>
+    <li>GitHub Actions runner token. Please note this is short-lived and needs to be generated from the GitHub repository under <code>/settings/actions/runners</code> and clicking New Self-hosted runner -button (see the image below where the token is highlighted in light blue)</li>
     <li>Runner group name (default is 'Default')</li>
     <li>VM shape (OCPUs, memory and boot volume disk size)</li>
 </ul>
