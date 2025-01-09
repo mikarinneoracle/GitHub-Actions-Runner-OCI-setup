@@ -27,7 +27,7 @@ Stack then allows to configure the parameters for the Runner and VM creation:
 
 <p>
 <br>
-You can delete the created resources at any time using stack <code>destroy</code> and re-create them again using the stack <code>apply</code>. Before re-creating it is advisable to delete the existing runner from the GitHub project. Multiple
+You can delete the created resources at any time using stack <code>destroy</code> and re-create them again using the stack <code>apply</code>. Before re-creating it is advised to delete the existing runner from the GitHub repository. Multiple
 runners can be set up by changing the default name <code>GitHubActionsrunner</code> of individual runners to something unique.
 <p>
 Terraform provider <code>oracle/oci</code> is installed so the created runner can be also used for Terraform pipelines.
