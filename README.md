@@ -22,6 +22,7 @@ Stack then allows to configure the parameters for the Runner and VM creation:
 <img src="github-actions-runner-token-setup.jpg" width="1200" />
 
 <p>
+
 [![Deploy to Oracle Cloud](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)](https://cloud.oracle.com/resourcemanager/stacks/create?zipUrl=https://github.com/mikarinneoracle/GitHub-Actions-Runner-OCI-setup/releases/download/latest/github-runner-stack.zip)
 
 <p>
