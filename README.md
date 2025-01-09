@@ -13,8 +13,8 @@ Stack then allows to configure the parameters for the Runner and VM creation:
 <ul>
     <li>Runner and VM name</li>
     <li>GitHub repository url</li>
-    <li>GitHub Actions runner token. Please note this is short-lived and needs to be generated from the GitHub project under Actions/Runners/Create self-hosted runner (refer to the image below)</li>
-    <li>Agent pool name (default is 'Default')</li>
+    <li>GitHub Actions runner token. Please note this is short-lived and needs to be generated from the GitHub project under <code>/settings/actions/runners</code> and clicking New Self-hosted runner -button (see the image below)</li>
+    <li>Runner group name (default is 'Default')</li>
     <li>VM shape (OCPUs, memory and boot volume disk size)</li>
 </ul>
 <p>
@@ -26,20 +26,20 @@ Stack then allows to configure the parameters for the Runner and VM creation:
 
 <p>
 <br>
-You can delete the created resources at any time using stack <code>destroy</code> and re-create them again using the stack <code>apply</code>. Before re-creating it is advisable to remove the exisiting agent from the Azure DevOps agent pool. Multiple
-agents can be set up by changing the default name <code>AzureDevOpsagent</code> of individual agents to something unique.
+You can delete the created resources at any time using stack <code>destroy</code> and re-create them again using the stack <code>apply</code>. Before re-creating it is advisable to delete the existing runner from the GitHub project. Multiple
+runners can be set up by changing the default name <code>GitHubActionsrunner</code> of individual runners to something unique.
 <p>
-Terraform provider <code>oracle/oci</code> is installed so the created agent can be also used for Terraform pipelines including https://marketplace.visualstudio.com/items?itemName=ms-devlabs.custom-terraform-tasks 
+Terraform provider <code>oracle/oci</code> is installed so the created runner can be also used for Terraform pipelines.
 <p>
 
-Terraform takes a moment to complete and eventually the build agent should appear in Azure DevOps agent pool.
+Resource Manager Terraform takes a moment to complete and eventually the runner should appear in the GitHub project under <code>/settings/actions/runners</code>.
 <p>
-<img src="azure-devops-agent.jpg" width="1200" />
+<img src="github-actions-runner.jpg" width="1200" />
 <p>
 
 VM boot volume size is 200M by default that can be adjusted per build needs during the Terraform stack creation.
 <p>
-<img src="azure-devops-agent-vm.jpg" width="1200" />
+<img src="github-actions-runner-vm.jpg" width="1200" />
 <br>
 <br>
 A bigger VM shape performs better. The defaults are 1 OCPU and 8GB memory that can be also adjusted during the Terraform stack creation.
