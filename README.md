@@ -33,12 +33,12 @@ runners can be set up by changing the default name <code>GitHubActionsrunner</co
 Terraform provider <code>oracle/oci</code> is installed so the created runner can be also used for Terraform pipelines.
 <p>
 
-Resource Manager Terraform takes a moment to complete and eventually the runner should appear in the GitHub project under <code>/settings/actions/runners</code>.
+Resource Manager Terraform takes a moment to complete and eventually the runner should appear in the GitHub project under <code>/settings/actions/runners</code>:
 <p>
 <img src="github-actions-runner.jpg" width="1200" />
 <p>
 
-VM boot volume size is 200M by default that can be adjusted per build needs during the Terraform stack creation.
+VM boot volume size is 200M by default that can be adjusted per build needs during the Terraform stack creation:
 <p>
 <img src="github-actions-runner-vm.jpg" width="1200" />
 <br>
