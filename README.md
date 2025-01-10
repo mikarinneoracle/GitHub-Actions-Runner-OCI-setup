@@ -32,6 +32,8 @@ runners can be set up by changing the default name <code>GitHubActionsrunner</co
 <p>
 Terraform provider <code>oracle/oci</code> is installed so the created runner can be also used for Terraform pipelines.
 <p>
+Runner VM does not allow inbound connections / incoming traffic from Internet.
+<p>
 
 Resource Manager Terraform takes a moment to complete and eventually the runner should appear in the GitHub project under <code>/settings/actions/runners</code>:
 <p>
